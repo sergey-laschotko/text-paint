@@ -1,0 +1,92 @@
+.canvas-generator {
+    padding: 40px;
+}
+
+.actions {
+    text-align: center;
+}
+
+.cg-action {
+    background: transparent;
+    border: 2px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cg-action:hover {
+    background: #ddd;
+}
+
+.cg-action:last-child {
+    margin-right: 0;
+}
+
+.cg-action.green {
+    background: #81CC21;
+    border-color: #75B325;
+    color: #fff;
+}
+
+.cg-action.green:hover {
+    background: #75B325;
+}
+
+.cg-action.blue {
+    background: #4271FF;
+    border-color: #1D42B3;
+    color: #fff;
+}
+
+.cg-action.blue:hover {
+    background: #1D42B3;
+}
+
+.filename {
+    padding: 30px;
+    color: #555;
+    text-align: center;
+}
+
+.error {
+    padding: 0 30px;
+    text-align: center;
+    color: lightcoral;
+    font-size: 14px;
+}
+
+.previews {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.preview {
+    width: 42%;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: auto;
+    max-height: 300px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    .previews {
+        flex-wrap: wrap;
+    }
+
+    .preview {
+        width: 100%;
+    }
+
+    .preview:first-child {
+        order: 2;
+    }
+
+    .preview:last-child {
+        order: 1;
+    }
+}
